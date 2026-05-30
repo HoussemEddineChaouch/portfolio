@@ -1,0 +1,36 @@
+---
+title: "Chef'sEye – AI Food Recommendation System"
+publishedAt: "2023-07-01"
+summary: "A computer vision and transfer learning system that identifies food from images and recommends similar meals, built on a MERN stack with role-based dashboards."
+images:
+  - "/images/projects/project-01/image-03.png"
+team:
+  - name: "Houssem Eddine Chaouch"
+    role: "Full-Stack Developer"
+    avatar: "/images/avatar.jpeg"
+    linkedIn: "https://www.linkedin.com/in/chaouch-houssem-eddine"
+---
+
+## Overview
+
+Chef'sEye is an AI-powered food recommendation platform. Users upload an image of a dish, and the system uses computer vision with transfer learning to identify the food type and recommend similar meals. The application is built on a MERN stack with role-based dashboards for users and administrators.
+
+## Key Features
+
+- **Food Image Recognition**: Deep learning model using transfer learning (MobileNet/ResNet) to classify uploaded food images with high accuracy.
+- **Meal Recommendations**: After identifying the dish, the system recommends similar meals based on ingredients and cuisine type.
+- **Image Upload & Processing**: Seamless image upload pipeline with preprocessing before inference.
+- **Role-Based Dashboards**: User and admin dashboards with distinct capabilities.
+- **Recipe Details**: Each recommendation links to detailed ingredient lists and preparation steps.
+
+## Technologies Used
+
+- **Front-End**: React.js, Material UI
+- **Back-End**: Node.js, Express.js, REST APIs
+- **Database**: MongoDB
+- **AI / ML**: Python, TensorFlow, Transfer Learning (pre-trained CNN models), Computer Vision
+- **Architecture**: MERN Stack
+
+## Challenges and Learnings
+
+Transfer learning dramatically reduced the training time compared to training from scratch, but fine-tuning the model for food-specific classes required careful dataset curation and augmentation. I learned to balance model size (for fast inference) with accuracy, ultimately deploying a quantized model served via a Flask API.

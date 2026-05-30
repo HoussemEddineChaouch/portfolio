@@ -1,0 +1,36 @@
+---
+title: "Careeria – AI-Powered Job Matching Platform"
+publishedAt: "2024-03-01"
+summary: "An end-to-end job matching platform connecting job seekers and employers using AI-driven resume parsing, OCR, NLP, and YOLO-based computer vision."
+images:
+  - "/images/projects/project-01/image-04.png"
+team:
+  - name: "Houssem Eddine Chaouch"
+    role: "Full-Stack Developer"
+    avatar: "/images/avatar.jpeg"
+    linkedIn: "https://www.linkedin.com/in/chaouch-houssem-eddine"
+---
+
+## Overview
+
+Careeria is a full-stack job matching platform that uses artificial intelligence to connect job seekers with relevant employers. The platform features resume parsing with OCR, NLP-based skill extraction, and a YOLO-powered document analysis pipeline — all wrapped in a clean MERN stack application with role-based dashboards.
+
+## Key Features
+
+- **AI Matching Engine**: Uses NLP to extract skills from resumes and job descriptions, then matches candidates to relevant positions automatically.
+- **Resume Parsing with OCR**: Candidates can upload PDF resumes which are parsed using OCR and NLP to extract structured data.
+- **YOLO Integration**: Computer vision model used for document classification and validation.
+- **Role-Based Dashboards**: Separate dashboards for job seekers, employers, and administrators with tailored features.
+- **Secure Authentication**: JWT-based auth with protected routes and RBAC.
+
+## Technologies Used
+
+- **Front-End**: React.js, Material UI, Tailwind CSS
+- **Back-End**: Node.js, Express.js, REST APIs, JWT
+- **Database**: MongoDB
+- **AI / ML**: Python, NLP, OCR, YOLO (computer vision), TensorFlow
+- **Architecture**: MERN Stack, Microservices
+
+## Challenges and Learnings
+
+Building the AI matching pipeline required combining multiple models — OCR for text extraction, NLP for entity recognition, and a scoring algorithm for ranking matches. The biggest challenge was keeping latency low while chaining these steps. I learned to use async job queues to process uploads in the background and return results without blocking the UI.

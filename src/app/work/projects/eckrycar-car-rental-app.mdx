@@ -1,0 +1,35 @@
+---
+title: "EckryCar – Full-Stack Car Rental App"
+publishedAt: "2023-09-01"
+summary: "A MERN stack car rental application with a full booking system, admin dashboard, analytics charts, and real-time notifications."
+images:
+  - "/images/projects/project-01/image-02.png"
+team:
+  - name: "Houssem Eddine Chaouch"
+    role: "Full-Stack Developer"
+    avatar: "/images/avatar.jpeg"
+    linkedIn: "https://www.linkedin.com/in/chaouch-houssem-eddine"
+---
+
+## Overview
+
+EckryCar is a full-stack car rental web application built on the MERN stack. It provides a seamless booking experience for customers and a powerful admin dashboard for fleet management, with real-time notifications and analytics charts.
+
+## Key Features
+
+- **Booking System**: Complete car reservation flow with availability checking, date selection, pricing calculation, and booking confirmation.
+- **Admin Dashboard**: Fleet management interface for adding/removing vehicles, managing bookings, and viewing revenue analytics.
+- **Analytics Charts**: Visual reporting of bookings, revenue, and vehicle utilization using Chart.js.
+- **Real-Time Notifications**: Live status updates for bookings using WebSocket connections.
+- **Role-Based Access**: Separate interfaces and permissions for customers and administrators.
+
+## Technologies Used
+
+- **Front-End**: React.js, Material UI, Chart.js
+- **Back-End**: Node.js, Express.js, REST APIs, JWT Authentication
+- **Database**: MongoDB
+- **Architecture**: MERN Stack
+
+## Challenges and Learnings
+
+Implementing real-time availability was the core challenge — ensuring two users couldn't book the same car for overlapping dates required careful handling of race conditions with optimistic locking on the database level. This project deepened my understanding of concurrent data access patterns in MongoDB.

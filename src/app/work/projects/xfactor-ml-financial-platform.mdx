@@ -1,0 +1,35 @@
+---
+title: "XFactor – ML-Enhanced Financial Management Platform"
+publishedAt: "2024-05-01"
+summary: "A full-stack financial management platform for the factoring domain, powered by machine learning for automated credit scoring and decision-making."
+images:
+  - "/images/projects/project-01/image-00.png"
+team:
+  - name: "Houssem Eddine Chaouch"
+    role: "Full-Stack Developer"
+    avatar: "/images/avatar.jpeg"
+    linkedIn: "https://www.linkedin.com/in/chaouch-houssem-eddine"
+---
+
+## Overview
+
+XFactor is a full-stack financial management platform designed for the factoring domain. Built during my end-of-studies internship at Shamash IT, it combines a modern React frontend with a machine learning pipeline for automated credit evaluation, helping financial institutions make faster and more accurate decisions.
+
+## Key Features
+
+- **ML Credit Scoring**: Integrated a machine learning pipeline that automates risk scoring and provides decision-support for evaluating client creditworthiness.
+- **Financial KPI Dashboards**: Built dynamic dashboards with real-time data visualization for key financial indicators relevant to factoring operations.
+- **RESTful API Layer**: Designed and implemented a clean REST API using Node.js and Express connecting the frontend to the database and ML modules.
+- **Role-Based Access**: Secure authentication with JWT and role-based access control for different user types (admins, analysts, clients).
+
+## Technologies Used
+
+- **Front-End**: React.js, Material UI, Chart.js
+- **Back-End**: Node.js, Express.js, REST APIs, JWT Authentication
+- **Database**: SQL Server, Prisma ORM
+- **AI / ML**: Python, Scikit-learn, Machine Learning pipeline for credit scoring
+- **Methodology**: Agile/Scrum with bi-weekly sprints
+
+## Challenges and Learnings
+
+Integrating a Python-based ML model into a Node.js API required careful design of the service boundary. I used a Flask microservice to expose the model as an endpoint, which the main Node.js backend consumed. This taught me practical patterns for ML-in-production architecture and the importance of clean API contracts between services.
