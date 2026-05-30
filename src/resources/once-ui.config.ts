@@ -109,31 +109,39 @@ const effects: EffectsConfig = {
     display: false,
     color: "neutral-alpha-weak",
     opacity: 100,
-    size: "16",
-    columns: "auto",
-    rows: "auto",
-    thickness: 1,
+    width: "16",
+    height: "16",
   },
 };
 
 const schema: SchemaConfig = {
   logo: "",
   type: "Person",
-  name: "Houssem Chaouch",
+  name: "Houssem Eddine Chaouch",
   description: home.description,
   email: "chaouch.eddinehoussem@gmail.com",
 };
 
 const socialSharing: SocialSharingConfig = {
-  title: home.title,
-  description: home.description,
-  ogImage: home.image,
+  display: true,
+  platforms: {
+    x: false,
+    linkedin: true,
+    facebook: false,
+    pinterest: false,
+    whatsapp: false,
+    reddit: false,
+    telegram: false,
+    email: true,
+    copyLink: true,
+  },
 };
 
-const sameAs: SameAsConfig = [
-  "https://github.com/HoussemEddineChaouch",
-  "https://www.linkedin.com/in/chaouch-houssem-eddine",
-];
+const sameAs: SameAsConfig = {
+  threads: "",
+  linkedin: "https://www.linkedin.com/in/chaouch-houssem-eddine",
+  discord: "",
+};
 
 const mailchimp: MailchimpConfig = {
   action: "",
@@ -168,17 +176,15 @@ const mailchimp: MailchimpConfig = {
       display: false,
       color: "neutral-alpha-weak",
       opacity: 100,
-      size: "16",
-      columns: "auto",
-      rows: "auto",
-      thickness: 1,
+      width: "16",
+      height: "16",
     },
   },
 };
 
 const dataStyle: DataStyleConfig = {
   variant: "gradient",
-  mode: "brand",
+  mode: "sequential",
   height: 400,
   axis: {
     stroke: "var(--neutral-border-medium)",
