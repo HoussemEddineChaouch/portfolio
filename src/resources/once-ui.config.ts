@@ -13,8 +13,7 @@ import {
 } from "@/types";
 import { home } from "./index";
 
-// IMPORTANT: Replace with your own domain address - it's used for SEO in meta tags and schema
-const baseURL: string = "https://houssem-chaouch.vercel.app";
+const baseURL: string = "https://houssemeddinechaouch.me";
 
 const routes: RoutesConfig = {
   "/": true,
@@ -105,7 +104,6 @@ const effects: EffectsConfig = {
     size: "16",
     thickness: 1,
     angle: 45,
-    gap: 8,
   },
   grid: {
     display: false,
@@ -165,7 +163,6 @@ const mailchimp: MailchimpConfig = {
       size: "16",
       thickness: 1,
       angle: 45,
-      gap: 8,
     },
     grid: {
       display: false,
@@ -192,6 +189,7 @@ const dataStyle: DataStyleConfig = {
     line: false,
   },
 };
+
 export {
   baseURL,
   routes,
