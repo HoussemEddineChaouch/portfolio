@@ -7,6 +7,7 @@ import {
   Person,
   Social,
   Work,
+  Certifications,
 } from "@/types";
 
 const person: Person = {
@@ -306,4 +307,66 @@ const gallery: Gallery = {
   ],
 };
 
-export { person, social, newsletter, home, about, blog, work, gallery };
+const certifications: Certifications = {
+  label: "Certifications",
+  title: "My Certifications",
+  description:
+    "Courses and certifications I have completed to sharpen my skills.",
+  items: [
+    {
+      platform: "Udemy",
+      title: "React JS — Hooks, Redux, State, Router",
+      date: "2024",
+      skills: ["React", "Redux", "React Router", "Hooks"],
+      link: "https://www.udemy.com/certificate/UC-423b11dd-24ae-4820-9214-34bee220baa9/",
+    },
+    {
+      platform: "Udemy",
+      title: "TailwindCSS from A to Z",
+      date: "2024",
+      skills: ["Tailwind CSS", "Responsive Design", "Utility-First CSS"],
+      link: "https://www.udemy.com/certificate/UC-41906aa7-f250-4769-bff1-48589c6791ad/",
+    },
+    {
+      platform: "Coursera",
+      title: "Programming with JavaScript",
+      date: "2023",
+      skills: ["Programming Principles", "OOP", "Jest", "JSON", "& More"],
+      link: "https://www.coursera.org/account/accomplishments/certificate/GBR4QJRXNNJZ",
+    },
+    {
+      platform: "Coursera",
+      title: "HTML and CSS in depth",
+      date: "2023",
+      skills: [
+        "Data Validation",
+        "Accessibility",
+        "Bootstrap",
+        "UI Components",
+      ],
+      link: "https://www.coursera.org/account/accomplishments/certificate/FAHQ83BPHRJJ",
+    },
+    {
+      platform: "DataCamp",
+      title: "Advanced Git",
+      date: "2026",
+      skills: [
+        "Advanced Merging Strategies",
+        "Git History",
+        "Advanced Repository Management",
+      ],
+      link: "https://www.datacamp.com/completed/statement-of-accomplishment/course/3774602dd7e2b07684a57b61d87e0c86742def24",
+    },
+  ],
+};
+export {
+  person,
+  social,
+  newsletter,
+  home,
+  about,
+  blog,
+  work,
+  gallery,
+  certifications,
+};

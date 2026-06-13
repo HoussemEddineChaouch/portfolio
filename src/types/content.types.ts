@@ -238,3 +238,19 @@ export interface Gallery extends BasePageConfig {
     orientation: string;
   }>;
 }
+
+export interface Certification {
+  platform: string;
+  title: string;
+  date: string;
+  skills: string[];
+  link: string;
+  image?: string;
+}
+
+export interface Certifications {
+  label: string;
+  title: string;
+  description: string;
+  items: Certification[];
+}
