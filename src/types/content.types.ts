@@ -249,6 +249,7 @@ export interface Certification {
 }
 
 export interface Certifications {
+  path: string; 
   label: string;
   title: string;
   description: string;

@@ -308,6 +308,7 @@ const gallery: Gallery = {
 };
 
 const certifications: Certifications = {
+  path: "/certifications",
   label: "Certifications",
   title: "My Certifications",
   description:
